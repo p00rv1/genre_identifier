@@ -1,43 +1,33 @@
 # 🎵 Genre Identifier
 
-Automatically identify the genre of an audio file using machine learning.
-
-[![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)]()
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)]()
+A machine learning project to classify music genres based on audio features. This tool analyzes audio files and predicts the genre using a trained model on spectral features like MFCCs.
 
 ---
 
-## 📌 Overview
+## 🔍 Overview
 
-A tool that predicts the genre (e.g., Rock, Jazz, Hip-hop) of **.wav** or **.mp3** audio files using a trained model.
+This project uses audio feature extraction and machine learning (likely neural networks or classical classifiers) to identify the genre of input audio files (e.g., `.wav`, `.mp3`).
 
----
-
-## ⚙️ Features
-
-- 🎶 Supports `.wav` and `.mp3` formats  
-- Uses a convolutional neural network (CNN) on spectrograms or MFCCs  
-- Easy to use: just provide the audio path  
-- 🎛️ Outputs genre label with confidence score  
+Features used:
+- **MFCCs (Mel Frequency Cepstral Coefficients)**
+- **Chroma Frequencies**
+- **Spectral Contrast**
+- **Tonnetz**
 
 ---
 
-## 🛠️ Installation
+## 🎯 Features
 
-1. Clone the repo:
-    ```bash
-    git clone https://github.com/p00rv1/genre_identifier.git
-    cd genre_identifier
-    ```
-
-2. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+- 🎶 Predict genre from any valid audio file
+- 🔎 Visualize extracted features
+- 🧠 Train your own model with a custom dataset
+- 📊 Evaluate model performance with accuracy, confusion matrix, and plots
 
 ---
 
-## 🚀 Usage
+## 📦 Requirements
+
+Install dependencies using:
 
 ```bash
-python predict_genre.py --input path/to/song.wav
+pip install -r requirements.txt
